@@ -1,0 +1,21 @@
+{{ errorMessage }}
+<div class="container-fluid">
+    <!--<div class="jumbotron">
+        <ul class="list-inline">
+            <li *ngFor="let content of contents; index as i;">{{ content.title }}<!--<div  *ngFor="let content of contents; index as i;">
+                    <h2>{{ content.title }}</h2>
+                    <p>{{ content.description }}</p>
+                </div> 
+            </li>
+        </ul>
+        
+    </div>  -->
+    <div class="row">
+        <div class="col-md-4" *ngFor="let content of contents; index as i;">
+            <h2><a [title]="content.title + ' Details'">{{ content.title }}</a></h2>
+            <p>{{ content.description }}</p>
+            
+        </div>
+    </div>
+</div>
+<!-- <li *ngFor="let content of contents; index as i;">{{ content.title }}</li> -->
